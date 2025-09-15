@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resolución de Tareas • Fuerza de Estudio</title>
+  <meta name="description" content="Servicio profesional de resolución de tareas, apuntes y asesoría académica rápida y confiable." />
+  <style>
+    :root{--accent:#0b6efd;--muted:#6b7280;--card:#ffffff;--bg:#f3f4f6}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;margin:0;background:var(--bg);color:#111}
+    a{color:var(--accent);text-decoration:none}
+    header{background:linear-gradient(90deg,rgba(11,110,253,0.1),rgba(11,110,253,0.04));backdrop-filter:saturate(.8) blur(.3px);padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;display:grid;place-items:center;border-radius:10px;background:linear(135deg,var(--accent),#fdfdfdb9);color:white}
+    nav{display:flex;gap:14px;align-items:center}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    h1{font-size:clamp(22px,3.6vw,36px);margin:0 0 10px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(11,110,253,0.12)}
+    .features{display:flex;gap:12px;margin-top:16px}
+    .feature{background:#fff;padding:12px;border-radius:10px;flex:1;box-shadow:0 4px 10px rgba(16,24,40,0.04)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+    .service{background:white;padding:18px;border-radius:12px}
+    .highlight{color:var(--accent);font-weight:700}
+    .pricing{display:flex;gap:12px;margin-top:18px}
+    .price{background:white;padding:18px;border-radius:12px;flex:1}
+    form.card{display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e9ee;font-size:14px}
+    .muted{color:var(--muted);font-size:13px}
+    footer{padding:24px 0;margin-top:36px;text-align:center;color:var(--muted)}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.hero-card{order:2}.container{padding:0 14px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="https://i.postimg.cc/8zNnsCCc/Dise-o-sin-t-tulo-1-removebg-preview.png" width="55px" height="55px" /></div>
+      <div>
+        <div style="font-weight:700">Soluciona2</div>
+        <div class="muted" style="font-size:12px">Resolución de tareas</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="hero-card">
+          <h1>Resuelve tus tareas rápido y con calidad</h1>
+          <p class="lead">Somos un equipo de estudiantes que te ayudan a entregar trabajos, ejercicios y proyectos. Entrega puntual.</p>
+          <div class="cta">
+            <button class="btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Solicitar servicio</button>
+            <a class="btn ghost" href="#precios">Ver precios</a>
+          </div>
+
+          <div class="features" aria-hidden>
+            <div class="feature">
+              <div style="font-weight:700">Entrega rápida</div>
+              <div class="muted" style="margin-top:6px">Depende de la complejidad de la tarea</div>
+            </div>
+            <div class="feature">
+              <div style="font-weight:700">Precios accesibles</div>
+              <div class="muted" style="margin-top:6px">Opciones para todo presupuesto</div>
+            </div>
+            <div class="feature">
+              <div style="font-weight:700">Confidencial</div>
+              <div class="muted" style="margin-top:6px">Tus datos y trabajos se mantienen privados</div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px">
+            <div style="font-weight:700;margin-bottom:8px">¿Cómo trabajamos?</div>
+            <ol class="muted">
+              <li>Envías los detalles de la tarea.</li>
+              <li>Te damos el precio y tiempo estimado.</li>
+              <li>Recibes la entrega.</li>
+              <li>También está disponible la opción de comunicarse a través de Facebook o Whatsaap*</li>
+            </ol>
+          </div>
+        </div>
+
+        <section id="servicios" style="margin-top:18px">
+          <h2 style="margin:0 0 12px">Servicios</h2>
+          <div class="services">
+            <div class="service">
+              <h3>Ciencias Exactas 📘</h3>
+              <ol class="muted">
+                <li>Álgebra</li>
+                <li>Aritmética</li>
+                <li>Geometría</li>
+                <li>Trigonometría</li>
+                <li>Cálculo</li>
+                <li>Física</li>
+                <li>Química</li>
+              </ol>
+            </div>
+            <div class="service">
+              <h3>Ciencias Sociales 🌱</h3>
+              <ol class="muted">
+                <li>Biología</li>
+                <li>Historia</li>
+                <li>Geografía</li>
+                <li>Economía</li>
+              </ol>
+            </div>
+            <div class="service">
+              <h3>Comunicación y Humanidades ✍️</h3>
+              <ol class="muted">
+                <li>Inglés</li>
+                <li>Ensayos</li>
+                <li>Resumenes</li>
+                <li>Trípticos</li>
+              </ol>
+            </div>
+            <div class="service">
+              <h3>Herramientas Tecnológicas 💻</h3>
+              <ol class="muted">
+                <li>Desarrollo de Software simple: HTML, CSS y Js</li>
+                <li>Videos</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="precios" style="margin-top:20px">
+          <h2 style="margin:0 0 12px">Precios (estimación)</h2>
+          <div class="pricing">
+            <div class="price">
+              <div style="font-weight:700">Rápido — desde S/ 15</div>
+              <div class="muted">Tareas cortas / ejercicios (1-12h)</div>
+            </div>
+            <div class="price">
+              <div style="font-weight:700">Estándar — entre S/ 25 - 35</div>
+              <div class="muted">Trabajos con mayor detalle (8–24h)</div>
+            </div>
+            <div class="price">
+              <div style="font-weight:700">Proyectos finales — desde S/ 50</div>
+              <div class="muted">Proyectos, ensayos, informes, artículos de revisión</div>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:10px">Los precios varían según la complejidad, la longitud y la urgencia. Solicita presupuesto para obtener un precio exacto.</p>
+        </section>
+      </div>
+
+      <aside class="hero-card">
+        <h3 style="margin-top:0">Solicita tu tarea</h3>
+        <form id="contact-form" class="card" action="https://formspree.io/f/mnnbydgo" method="post" enctype="multipart/form-data">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" required placeholder="Tu nombre" />
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" required placeholder="tu@correo.com" />
+
+          <label for="subject">Materia / Asunto</label>
+          <select id="subject" name="subject" required>
+            <option value="Matematicas">Ciencias Exactas</option>
+            <option value="Programacion">Ciencias Sociales</option>
+            <option value="Redaccion">Comunicación y Humanidades</option>
+            <option value="Fisica">Herramientas Tecnológicas</option>
+            <option value="Otro">Otros</option>
+          </select>
+
+          <label for="details">Detalles de la tarea</label>
+          <textarea id="details" name="details" rows="6" required placeholder="Describe lo que necesitas"></textarea>
+
+          <label for="deadline">Fecha límite</label>
+          <input id="deadline" name="deadline" type="date" required />
+          <label for="filelink">Enlace al archivo (Drive, Onedrive, etc.)</label>
+          <input id="filelink" name="filelink" type="url" placeholder="https://drive.google.com/..." />
+          <div style="display:flex;gap:8px;align-items:center;">
+            <input type="checkbox" id="agree" required />
+            <label for="agree" class="muted">Acepto recibir respuesta vía correo</label>
+          </div>
+
+          <button class="btn" type="submit">Enviar solicitud</button>
+          <div id="form-msg" class="muted" aria-live="polite" style="margin-top:6px"></div>
+        </form>
+
+        <hr style="margin:16px 0" />
+        <div>
+          <div style="font-weight:700">Métodos de pago</div>
+          <div class="muted">Transferencia y Yape</div>
+        </div>
+      </aside>
+    </section>
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:700">Soluciona2</div>
+          <div class="muted">Servicio de resolución de tareas • &copy; <span id="year"></span></div>
+        </div>
+        <div class="muted">Contacto: soluciona2ooo@gmail.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const details = document.getElementById('details').value.trim();
+      const deadline = document.getElementById('deadline').value;
+
+      if(!name || !email || !details || !deadline){
+        showMsg('Completa todos los campos.');
+        return;
+      }
+
+      // Simulación de envío
+      showMsg('Enviando solicitud...');
+      setTimeout(()=>{
+        showMsg('Solicitud enviada. Revisa tu correo para el presupuesto (esto es una demo).');
+        // Aquí podrías integrar una llamada fetch() a tu backend o servicio de correo
+        document.getElementById('contact-form').reset();
+      },1200);
+    }
+
+    function showMsg(txt){
+      const el = document.getElementById('form-msg');
+      el.textContent = txt;
+    }
+  </script>
+</body>
+</html>
